@@ -47,7 +47,7 @@ PROFILE_FIELDS = [
 BG_COLOR = "#0b1120"          # terminal window background (deep navy)
 TITLEBAR_COLOR = "#141c30"    # title bar strip
 TITLE_TEXT_COLOR = "#7f8aa6"
-ACCENT = "#5dc9f2"             # ASCII art color (light blue dots)
+ACCENT = "#e8384f"             # ASCII art / cursor accent (Sharingan / Kali red)
 HEADER_COLOR = "#e8384f"       # bold red "login@login" header + prompt user/path
 LABEL_COLOR = "#ffffff"        # bold field labels
 VALUE_COLOR = "#5dc9f2"        # field values (cyan/blue)
@@ -88,7 +88,6 @@ def find_avatar():
 
 def ascii_rows_from_image(path):
     from PIL import Image
-    import numpy as np
 
     img = Image.open(path).convert("RGBA")
     w, h = img.size
@@ -97,42 +96,76 @@ def ascii_rows_from_image(path):
     top = (h - side) // 2
     img = img.crop((left, top, left + side, top + side))
 
-    arr = np.array(img).astype(np.float32)
-    rgb = arr[..., :3]
-    alpha = arr[..., 3]
-
-    has_real_alpha = alpha.min() < 250
-    if not has_real_alpha:
-        m = max(2, int(side * 0.05))
-        corners = np.concatenate([
-            rgb[0:m, 0:m].reshape(-1, 3),
-            rgb[0:m, -m:].reshape(-1, 3),
-            rgb[-m:, 0:m].reshape(-1, 3),
-            rgb[-m:, -m:].reshape(-1, 3),
-        ], axis=0)
-        bg_color = np.median(corners, axis=0)
-        dist = np.sqrt(((rgb - bg_color) ** 2).sum(axis=-1))
-        alpha = np.clip((dist - 42.0) * 6.0, 0, 255)
-
     rows = max(1, round(ART_COLS * (CELL_W / CELL_H)))
+    small = img.resize((ART_COLS, rows), Image.Resampling.LANCZOS)
+    px = small.load()
 
-    mask_img = Image.fromarray(alpha.astype(np.uint8), mode="L").resize((ART_COLS, rows), Image.LANCZOS)
-    gray_img = Image.fromarray(rgb.astype(np.uint8)).convert("L").resize((ART_COLS, rows), Image.LANCZOS)
-    mask_px = mask_img.load()
-    gray_px = gray_img.load()
+    extrema = img.getextrema()
+    has_real_alpha = extrema[3][0] < 250
+
+    bg_rgb = None
+    if not has_real_alpha:
+        corners = [
+            px[0, 0][:3], px[ART_COLS - 1, 0][:3],
+            px[0, rows - 1][:3], px[ART_COLS - 1, rows - 1][:3]
+        ]
+        bg_rgb = (
+            sum(c[0] for c in corners) // 4,
+            sum(c[1] for c in corners) // 4,
+            sum(c[2] for c in corners) // 4
+        )
 
     out_rows = []
     for y in range(rows):
-        line = []
+        row_segs = []
+        curr_text = ''
+        curr_color = None
         for x in range(ART_COLS):
-            fg = mask_px[x, y] / 255.0
-            if fg < 0.22:
-                line.append(" ")
-                continue
-            lum = gray_px[x, y] / 255.0
-            idx = min(len(RAMP) - 2, int(lum * (len(RAMP) - 1)))
-            line.append(RAMP[idx])
-        out_rows.append("".join(line))
+            r, g, b, a = px[x, y]
+            is_bg = False
+            if has_real_alpha:
+                if a < 45:
+                    is_bg = True
+            elif bg_rgb:
+                dist = ((r - bg_rgb[0])**2 + (g - bg_rgb[1])**2 + (b - bg_rgb[2])**2)**0.5
+                if dist < 35:
+                    is_bg = True
+
+            if is_bg:
+                char = ' '
+                color = None
+            elif r > 85 and r > (g + b) * 0.7:
+                # Sharingan red
+                char = '#'
+                color = '#e8384f'
+            elif (r + g + b) // 3 < 40:
+                # Sharingan black (pupil, tomoe, outer ring)
+                char = '@'
+                color = '#000000'
+            else:
+                lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255.0
+                if lum < 0.25:
+                    char = '@'
+                    color = '#050708'
+                elif r > g and r > b:
+                    char = '#'
+                    color = '#db313b'
+                else:
+                    ramp = ' .:+#@'
+                    idx = min(len(ramp) - 1, int(lum * len(ramp)))
+                    char = ramp[idx]
+                    color = f'#{r:02x}{g:02x}{b:02x}'
+
+            if color == curr_color:
+                curr_text += char
+            else:
+                if curr_text:
+                    row_segs.append((curr_text, curr_color))
+                curr_text = char
+                curr_color = color
+        if curr_text:
+            row_segs.append((curr_text, curr_color))
+        out_rows.append(row_segs)
     return out_rows
 
 
@@ -379,10 +412,21 @@ def build_svg(art_rows, fields):
     for i, row in enumerate(art_rows):
         y = art_top + i * CELL_H + CELL_H * 0.8
         delay = round(i * 0.045, 3)
+        if isinstance(row, list):
+            line_content = ""
+            for text, color in row:
+                escaped = xml_escape(text)
+                if color:
+                    line_content += f'<tspan fill="{color}">{escaped}</tspan>'
+                else:
+                    line_content += escaped
+        else:
+            line_content = xml_escape(row)
+
         art_lines.append(
             f'\n      <text x="{PAD}" y="{y:.1f}" class="art fadein" '
             f'style="animation-delay:{delay}s" textLength="{ART_W:.1f}" lengthAdjust="spacingAndGlyphs" '
-            f'xml:space="preserve">{xml_escape(row)}</text>'
+            f'xml:space="preserve">{line_content}</text>'
         )
     art_svg = "".join(art_lines)
 

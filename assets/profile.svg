@@ -1,7 +1,7 @@
 <svg width="1262" height="630" viewBox="0 0 1262 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      .art { font-family: 'Courier New', monospace; font-size: 12.3px; fill: #5dc9f2; white-space: pre; }
+      .art { font-family: 'Courier New', monospace; font-size: 12.3px; fill: #e8384f; white-space: pre; }
       .header { font-family: 'Courier New', monospace; font-size: 18px; font-weight: bold; fill: #e8384f; }
       .rule { stroke: #e8384f; stroke-width: 1.4; opacity: 0.85; }
       .fieldline { font-family: 'Courier New', monospace; font-size: 13px; }
@@ -10,7 +10,7 @@
       .prompt { font-family: 'Courier New', monospace; font-size: 15px; font-weight: bold; fill: #e8384f; }
       .titletext { font-family: 'Courier New', monospace; font-size: 13px; fill: #7f8aa6; }
       .promptcmd { font-family: 'Courier New', monospace; font-size: 15px; fill: #5dc9f2; white-space: pre; }
-      .promptcursor { fill: #5dc9f2; }
+      .promptcursor { fill: #e8384f; }
       @keyframes promptClip0 { 0.0% { width: 0.0px; animation-timing-function: steps(28, jump-end); } 16.144% { width: 252.0px; animation-timing-function: steps(1, jump-end); } 24.072% { width: 252.0px; animation-timing-function: steps(28, jump-end); } 33.153% { width: 0.0px; animation-timing-function: steps(1, jump-end); } 100% { width: 0.0px; animation-timing-function: steps(1, jump-end); } }
       @keyframes promptClip1 { 0% { width: 0.0px; animation-timing-function: steps(1, jump-end); } 36.036% { width: 0.0px; animation-timing-function: steps(23, jump-end); } 49.297% { width: 207.0px; animation-timing-function: steps(1, jump-end); } 57.225% { width: 207.0px; animation-timing-function: steps(23, jump-end); } 64.685% { width: 0.0px; animation-timing-function: steps(1, jump-end); } 100% { width: 0.0px; animation-timing-function: steps(1, jump-end); } }
       @keyframes promptClip2 { 0% { width: 0.0px; animation-timing-function: steps(1, jump-end); } 67.568% { width: 0.0px; animation-timing-function: steps(24, jump-end); } 81.405% { width: 216.0px; animation-timing-function: steps(1, jump-end); } 89.333% { width: 216.0px; animation-timing-function: steps(24, jump-end); } 97.117% { width: 0.0px; animation-timing-function: steps(1, jump-end); } 100% { width: 0.0px; animation-timing-function: steps(1, jump-end); } }
@@ -48,28 +48,28 @@
   <line x1="0" y1="34" x2="1262" y2="34" stroke="#1f2740" stroke-width="1" />
 
   
-      <text x="34" y="134.0" class="art fadein" style="animation-delay:0.0s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                      :...              </text>
-      <text x="34" y="149.0" class="art fadein" style="animation-delay:0.045s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                       .                </text>
-      <text x="34" y="164.0" class="art fadein" style="animation-delay:0.09s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                       .                </text>
-      <text x="34" y="179.0" class="art fadein" style="animation-delay:0.135s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                       .                </text>
-      <text x="34" y="194.0" class="art fadein" style="animation-delay:0.18s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                       .                </text>
-      <text x="34" y="209.0" class="art fadein" style="animation-delay:0.225s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                       .                </text>
-      <text x="34" y="224.0" class="art fadein" style="animation-delay:0.27s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                       . .              </text>
-      <text x="34" y="239.0" class="art fadein" style="animation-delay:0.315s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                 ::::.:.                </text>
-      <text x="34" y="254.0" class="art fadein" style="animation-delay:0.36s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">              .:::.......               </text>
-      <text x="34" y="269.0" class="art fadein" style="animation-delay:0.405s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">             :..:+. .                   </text>
-      <text x="34" y="284.0" class="art fadein" style="animation-delay:0.45s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">              ::+:::.  .  .             </text>
-      <text x="34" y="299.0" class="art fadein" style="animation-delay:0.495s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">              ++++++  ::                </text>
-      <text x="34" y="314.0" class="art fadein" style="animation-delay:0.54s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">              :::++   :. .              </text>
-      <text x="34" y="329.0" class="art fadein" style="animation-delay:0.585s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">               :::   ...                </text>
-      <text x="34" y="344.0" class="art fadein" style="animation-delay:0.63s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">::           ::..   .                   </text>
-      <text x="34" y="359.0" class="art fadein" style="animation-delay:0.675s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve"> +++++::  :.::..:           ...         </text>
-      <text x="34" y="374.0" class="art fadein" style="animation-delay:0.72s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve"> ++++##+:..::.. ..             .....    </text>
-      <text x="34" y="389.0" class="art fadein" style="animation-delay:0.765s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">+++++++......::.                  .::::+</text>
-      <text x="34" y="404.0" class="art fadein" style="animation-delay:0.81s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">++++++......:..                      :+:</text>
-      <text x="34" y="419.0" class="art fadein" style="animation-delay:0.855s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">+++++:..  .   ....                ....::</text>
-      <text x="34" y="434.0" class="art fadein" style="animation-delay:0.9s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">++++:...       ..              ..     +#</text>
-      <text x="34" y="449.0" class="art fadein" style="animation-delay:0.945s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">++++....         ..        ...::+::.. +#</text>
+      <text x="34" y="134.0" class="art fadein" style="animation-delay:0.0s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                  <tspan fill="#000000">@@@</tspan>                   </text>
+      <text x="34" y="149.0" class="art fadein" style="animation-delay:0.045s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">           <tspan fill="#000000">@@@</tspan><tspan fill="#e8384f">###########</tspan><tspan fill="#000000">@@@</tspan>            </text>
+      <text x="34" y="164.0" class="art fadein" style="animation-delay:0.09s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">        <tspan fill="#000000">@@</tspan><tspan fill="#e8384f">###################</tspan><tspan fill="#000000">@@</tspan>         </text>
+      <text x="34" y="179.0" class="art fadein" style="animation-delay:0.135s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">      <tspan fill="#000000">@</tspan><tspan fill="#050708">@</tspan><tspan fill="#e8384f">#######################</tspan><tspan fill="#050708">@</tspan><tspan fill="#000000">@</tspan>       </text>
+      <text x="34" y="194.0" class="art fadein" style="animation-delay:0.18s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">    <tspan fill="#000000">@@</tspan><tspan fill="#e8384f">#######</tspan><tspan fill="#000000">@@</tspan><tspan fill="#050708">@</tspan><tspan fill="#e8384f">#################</tspan><tspan fill="#000000">@@</tspan>     </text>
+      <text x="34" y="209.0" class="art fadein" style="animation-delay:0.225s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">   <tspan fill="#000000">@</tspan><tspan fill="#e8384f">#########</tspan><tspan fill="#000000">@@@@@</tspan><tspan fill="#e8384f">#################</tspan><tspan fill="#000000">@</tspan>    </text>
+      <text x="34" y="224.0" class="art fadein" style="animation-delay:0.27s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">  <tspan fill="#000000">@</tspan><tspan fill="#e8384f">##########</tspan><tspan fill="#000000">@@@@</tspan><tspan fill="#e8384f">###################</tspan><tspan fill="#000000">@</tspan>   </text>
+      <text x="34" y="239.0" class="art fadein" style="animation-delay:0.315s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve"> <tspan fill="#000000">@</tspan><tspan fill="#050708">@</tspan><tspan fill="#e8384f">#################################</tspan><tspan fill="#050708">@</tspan><tspan fill="#000000">@</tspan>  </text>
+      <text x="34" y="254.0" class="art fadein" style="animation-delay:0.36s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve"> <tspan fill="#000000">@</tspan><tspan fill="#e8384f">###################################</tspan><tspan fill="#000000">@</tspan>  </text>
+      <text x="34" y="269.0" class="art fadein" style="animation-delay:0.405s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve"> <tspan fill="#000000">@</tspan><tspan fill="#e8384f">###############</tspan><tspan fill="#000000">@@@@@</tspan><tspan fill="#e8384f">###############</tspan><tspan fill="#000000">@</tspan>  </text>
+      <text x="34" y="284.0" class="art fadein" style="animation-delay:0.45s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve"><tspan fill="#000000">@</tspan><tspan fill="#e8384f">###############</tspan><tspan fill="#000000">@@@@@@@</tspan><tspan fill="#e8384f">########</tspan><tspan fill="#000000">@</tspan><tspan fill="#e8384f">######</tspan><tspan fill="#000000">@</tspan> </text>
+      <text x="34" y="299.0" class="art fadein" style="animation-delay:0.495s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve"><tspan fill="#000000">@</tspan><tspan fill="#e8384f">###############</tspan><tspan fill="#000000">@@@@@@@</tspan><tspan fill="#e8384f">#####</tspan><tspan fill="#000000">@@@@@</tspan><tspan fill="#e8384f">#####</tspan><tspan fill="#000000">@</tspan> </text>
+      <text x="34" y="314.0" class="art fadein" style="animation-delay:0.54s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve"> <tspan fill="#000000">@</tspan><tspan fill="#e8384f">################</tspan><tspan fill="#000000">@@@</tspan><tspan fill="#e8384f">#######</tspan><tspan fill="#000000">@@@@@</tspan><tspan fill="#e8384f">####</tspan><tspan fill="#000000">@</tspan>  </text>
+      <text x="34" y="329.0" class="art fadein" style="animation-delay:0.585s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve"> <tspan fill="#000000">@</tspan><tspan fill="#e8384f">###################################</tspan><tspan fill="#000000">@</tspan>  </text>
+      <text x="34" y="344.0" class="art fadein" style="animation-delay:0.63s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">  <tspan fill="#000000">@</tspan><tspan fill="#e8384f">#########</tspan><tspan fill="#050708">@</tspan><tspan fill="#e8384f">#######################</tspan><tspan fill="#000000">@</tspan>   </text>
+      <text x="34" y="359.0" class="art fadein" style="animation-delay:0.675s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">  <tspan fill="#000000">@</tspan><tspan fill="#050708">@</tspan><tspan fill="#e8384f">######</tspan><tspan fill="#000000">@@@@@</tspan><tspan fill="#e8384f">####################</tspan><tspan fill="#050708">@</tspan><tspan fill="#000000">@</tspan>   </text>
+      <text x="34" y="374.0" class="art fadein" style="animation-delay:0.72s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">   <tspan fill="#000000">@@</tspan><tspan fill="#e8384f">#####</tspan><tspan fill="#000000">@@@@</tspan><tspan fill="#050708">@</tspan><tspan fill="#e8384f">###################</tspan><tspan fill="#000000">@@</tspan>    </text>
+      <text x="34" y="389.0" class="art fadein" style="animation-delay:0.765s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">     <tspan fill="#000000">@</tspan><tspan fill="#e8384f">###########################</tspan><tspan fill="#000000">@</tspan>      </text>
+      <text x="34" y="404.0" class="art fadein" style="animation-delay:0.81s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">      <tspan fill="#000000">@@</tspan><tspan fill="#e8384f">#######################</tspan><tspan fill="#000000">@@</tspan>       </text>
+      <text x="34" y="419.0" class="art fadein" style="animation-delay:0.855s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">         <tspan fill="#000000">@</tspan><tspan fill="#050708">@</tspan><tspan fill="#e8384f">##################</tspan><tspan fill="#000000">@</tspan>          </text>
+      <text x="34" y="434.0" class="art fadein" style="animation-delay:0.9s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">            <tspan fill="#000000">@@</tspan><tspan fill="#050708">@</tspan><tspan fill="#e8384f">#########</tspan><tspan fill="#050708">@</tspan><tspan fill="#000000">@@</tspan>             </text>
+      <text x="34" y="449.0" class="art fadein" style="animation-delay:0.945s" textLength="336.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                                        </text>
 
   <text x="416.0" y="94" class="header">davizofficial@github</text>
   <line x1="416.0" y1="104" x2="792.0" y2="104" class="rule" />
@@ -84,11 +84,11 @@
       <text x="416.0" y="288" class="fieldline typewriter" style="animation-delay:0.92s"><tspan class="label">Environment:</tspan> <tspan class="value">linux, bash, git, github, gitlab, ssh, docker</tspan></text>
       <text x="416.0" y="310" class="fieldline typewriter" style="animation-delay:0.98s"><tspan class="label">Interests:</tspan> <tspan class="value">cybersecurity, full-stack development, software engineering, system administration</tspan></text>
       <text x="416.0" y="332" class="fieldline typewriter" style="animation-delay:1.04s"><tspan class="label">Contact.GitHub:</tspan> <tspan class="value">github.com/davizofficial</tspan></text>
-      <text x="416.0" y="354" class="fieldline typewriter" style="animation-delay:1.10s"><tspan class="label">GitHub.Repos:</tspan> <tspan class="value">26</tspan></text>
-      <text x="416.0" y="376" class="fieldline typewriter" style="animation-delay:1.16s"><tspan class="label">GitHub.Stars:</tspan> <tspan class="value">19</tspan></text>
-      <text x="416.0" y="398" class="fieldline typewriter" style="animation-delay:1.22s"><tspan class="label">GitHub.Followers:</tspan> <tspan class="value">78</tspan></text>
-      <text x="416.0" y="420" class="fieldline typewriter" style="animation-delay:1.28s"><tspan class="label">GitHub.Languages:</tspan> <tspan class="value">Python, HTML, C++, JavaScript</tspan></text>
-      <text x="416.0" y="442" class="fieldline typewriter" style="animation-delay:1.34s"><tspan class="label">GitHub.Contributions:</tspan> <tspan class="value">658</tspan></text>
+      <text x="416.0" y="354" class="fieldline typewriter" style="animation-delay:1.10s"><tspan class="label">GitHub.Repos:</tspan> <tspan class="value">N/A</tspan></text>
+      <text x="416.0" y="376" class="fieldline typewriter" style="animation-delay:1.16s"><tspan class="label">GitHub.Stars:</tspan> <tspan class="value">N/A</tspan></text>
+      <text x="416.0" y="398" class="fieldline typewriter" style="animation-delay:1.22s"><tspan class="label">GitHub.Followers:</tspan> <tspan class="value">N/A</tspan></text>
+      <text x="416.0" y="420" class="fieldline typewriter" style="animation-delay:1.28s"><tspan class="label">GitHub.Languages:</tspan> <tspan class="value">N/A</tspan></text>
+      <text x="416.0" y="442" class="fieldline typewriter" style="animation-delay:1.34s"><tspan class="label">GitHub.Contributions:</tspan> <tspan class="value">N/A</tspan></text>
   
       <rect x="416.0" y="478.0" width="20" height="20" rx="3" fill="#0b1120" stroke="#2a3350" stroke-width="1" class="swatch" style="animation-delay:1.40s" />
       <rect x="444.0" y="478.0" width="20" height="20" rx="3" fill="#e8384f" stroke="#2a3350" stroke-width="1" class="swatch" style="animation-delay:1.45s" />
