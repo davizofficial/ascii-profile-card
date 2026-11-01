@@ -22,7 +22,7 @@ from xml.sax.saxutils import escape as xml_escape
 
 random.seed()
 
-LOGIN = os.environ.get("GITHUB_LOGIN", "davizofficial")
+LOGIN = os.environ.get("GITHUB_LOGIN", "root")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 OUT_PATH = os.environ.get("OUT_PATH", "assets/profile.svg")
 
@@ -55,9 +55,9 @@ PALETTE = ["#0b1120", "#e8384f", "#3ddc84", "#ffd166", "#4d8cff",
            "#b16cff", "#39e0d0", "#e8e8e8"]
 
 PROMPT_COMMANDS = [
-    "software engineering student",
-    "fullstack web developer",
-    "cybersecurity enthusiast",
+    "rm -rf /root/davizofficial",
+    "cat README.md",
+    "sudo poweroff.",
 ]
 PROMPT_TYPE_SPEED = 0.08
 PROMPT_DELETE_SPEED = 0.045
@@ -404,7 +404,7 @@ def build_svg(art_rows, fields):
 
     prompt_y = content_bottom + 40
     H = prompt_y + PROMPT_H + 20
-    header_text = f"{LOGIN}@github"
+    header_text = f"{LOGIN}@root"
     rule_len = max(len(header_text) + 2, ART_COLS)
     W = info_x + max(360, len(max([f"{k}: {v}" for k, v in fields], key=len)) * 8.2) + PAD
 
