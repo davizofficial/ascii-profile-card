@@ -2,10 +2,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.12+-5dc9f2?style=flat-square&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/github/actions/workflow/status/pangeran-droid/ascii-profile-card/generate-card.yml?style=flat-square&label=build&logo=github" alt="Build">
-  <img src="https://img.shields.io/github/license/pangeran-droid/ascii-profile-card?style=flat-square&color=e8384f" alt="License">
-  <img src="https://img.shields.io/github/stars/pangeran-droid/ascii-profile-card?style=flat-square&color=ffd166&logo=github" alt="Stars">
-  <img src="https://img.shields.io/github/forks/pangeran-droid/ascii-profile-card?style=flat-square&color=4d8cff&logo=github" alt="Forks">
+  <img src="https://img.shields.io/github/actions/workflow/status/davizofficial/ascii-profile-card/generate-card.yml?style=flat-square&label=build&logo=github" alt="Build">
+  <img src="https://img.shields.io/github/license/davizofficial/ascii-profile-card?style=flat-square&color=e8384f" alt="License">
+  <img src="https://img.shields.io/github/stars/davizofficial/ascii-profile-card?style=flat-square&color=ffd166&logo=github" alt="Stars">
+  <img src="https://img.shields.io/github/forks/davizofficial/ascii-profile-card?style=flat-square&color=4d8cff&logo=github" alt="Forks">
   <img src="https://img.shields.io/badge/PRs-welcome-3ddc84?style=flat-square&logo=github" alt="PRs Welcome">
 </p>
 
@@ -13,15 +13,7 @@
 avatar into ASCII art (or falls back to a procedural dragon motif if you don't provide one), animates
 a typing prompt, and pulls in live GitHub stats — all rendered as a single self-contained SVG.</p>
 
-![Example card](https://raw.githubusercontent.com/pangeran-droid/ascii-profile-card/refs/heads/main/assets/profile.svg)
-
-<details>
-<summary>ascii-profile-card v2</summary>
-<br>
-
-<img src="https://raw.githubusercontent.com/pangeran-droid/ascii-profile-card/refs/heads/main/assets/profile_v2.svg" alt="Example card V2">
-
-</details>
+![Example card](https://raw.githubusercontent.com/davizofficial/ascii-profile-card/refs/heads/main/assets/profile.svg)
 
 ## Quick start
 

@@ -22,7 +22,7 @@ from xml.sax.saxutils import escape as xml_escape
 
 random.seed()
 
-LOGIN = os.environ.get("GITHUB_LOGIN", "kali")
+LOGIN = os.environ.get("GITHUB_LOGIN", "davizofficial")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 OUT_PATH = os.environ.get("OUT_PATH", "assets/profile.svg")
 
@@ -30,17 +30,17 @@ OUT_PATH = os.environ.get("OUT_PATH", "assets/profile.svg")
 # Field list shown on the right, neofetch-style.
 # ---------------------------------------------------------------------------
 PROFILE_FIELDS = [
-    ("Role", "informatics student"),
-    ("Focus", "junior web developer & cybersecurity enthusiast"),
-    ("Stack.Frontend", "html, css, javascript"),
-    ("Stack.Backend", "php, laravel, codeigniter"),
-    ("Stack.Scripting", "python"),
-    ("Stack.Database", "mysql"),
-    ("Stack.Security", "burp suite"),
-    ("Environment", "linux, git, github, vscode"),
-    ("Interests", "cybersecurity"),
+    ("Role", "software engineering student"),
+    ("Focus", "full-stack web developer & cybersecurity enthusiast"),
+    ("Stack.Frontend", "html, css, javascript, typescript, react, vue.js, angular, next.js, nuxt.js, svelte"),
+    ("Stack.Frontend.UI", "tailwind css, bootstrap, shadcn/ui, material ui"),
+    ("Stack.Backend", "php, python, javascript, typescript"),
+    ("Stack.Backend.Frameworks", "laravel, codeigniter, express.js, nestjs, django, fastapi"),
+    ("Stack.Database", "mysql, postgresql, sqlite, mongodb, oracle"),
+    ("Environment", "linux, bash, git, github, gitlab, ssh, docker"),
+    ("Interests", "cybersecurity, full-stack development, software engineering, system administration"),
     ("Contact.GitHub", f"github.com/{LOGIN}"),
-    ("Contact.Telegram", "t.me/pangeran1337"),
+
 ]
 
 # ---- Kali color scheme -----------------------------------------------------
@@ -55,8 +55,8 @@ PALETTE = ["#0b1120", "#e8384f", "#3ddc84", "#ffd166", "#4d8cff",
            "#b16cff", "#39e0d0", "#e8e8e8"]
 
 PROMPT_COMMANDS = [
-    "informatics student",
-    "junior web developer",
+    "software engineering student",
+    "fullstack web developer",
     "cybersecurity enthusiast",
 ]
 PROMPT_TYPE_SPEED = 0.08
